@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505693F429CE2D4300E0AF34 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 505693F329CE2D4300E0AF34 /* OAuth2 */; };
 		50B3836929C8B6C3005464A8 /* swifty_companionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3836829C8B6C3005464A8 /* swifty_companionApp.swift */; };
 		50B3836B29C8B6C3005464A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3836A29C8B6C3005464A8 /* ContentView.swift */; };
 		50B3836D29C8B6C4005464A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B3836C29C8B6C4005464A8 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505693F429CE2D4300E0AF34 /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,9 @@
 			dependencies = (
 			);
 			name = "swifty-companion";
+			packageProductDependencies = (
+				505693F329CE2D4300E0AF34 /* OAuth2 */,
+			);
 			productName = "swifty-companion";
 			productReference = 50B3836529C8B6C3005464A8 /* swifty-companion.app */;
 			productType = "com.apple.product-type.application";
@@ -191,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 50B3835C29C8B6C3005464A8;
+			packageReferences = (
+				505693F229CE2D4300E0AF34 /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
 			productRefGroup = 50B3836629C8B6C3005464A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -546,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		505693F229CE2D4300E0AF34 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		505693F329CE2D4300E0AF34 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 505693F229CE2D4300E0AF34 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50B3835D29C8B6C3005464A8 /* Project object */;
 }

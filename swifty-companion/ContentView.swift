@@ -10,22 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-        List {
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-            Text("Hello, world!")
-                .padding();
-        }
+            List {
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+                Text("Hello, world!")
+                    .padding();
+            }.navigationTitle("nav header")
         }
     }
 }
